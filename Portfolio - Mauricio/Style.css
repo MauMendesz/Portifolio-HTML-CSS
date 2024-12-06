@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      
+}
+
+body{
+    background-image: url('CSS/imagem2.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    transition: 5s;
+    overflow: hidden;
+
+animation-name: animate;
+animation-direction:alternate-reverse ;
+animation-duration:5s ;
+animation-fill-mode:forwards ;
+animation-iteration-count:infinite ;
+animation-play-state:running;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+       0%{
+        background-image:url(CSS/imagem2.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+      }50%{
+        background-image:url(CSS/GTA.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+      }100%{
+        background-image:url(CSS/ART.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh; 
+    }
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabeçalho-link{
+    display:flex;
+    gap: 5rem;
+    font-weight: 300;
+    cursor: pointer; 
+    
+
+}
+
+.cabeçalho-link a{
+    color: #fff;
+    padding-right: 5px;
+    font-size: 22px;
+   font-style: normal;
+   font-family: "Poppins", sans-serif;
+   position: relative;
+   top: -140px;
+   
+}
+
+.cabeçalho-link i{
+    color: #ffffff;
+padding: 5px;
+margin-top: 5px;
+font-size: 25px;
+}
+
+.cabeçalho-link i:hover{
+    color: #26214d;
+    transition: 0.5s all;
+}
+
+.cabeçalho-link a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color:#26214d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+   
+}
+
+.cabeçalho-link  a:hover{
+    color:#26214d;
+    transition: 0.5s all;
+}
+
+.cabeçalho-link  a:hover::after{
+   width: 100%;
+}
+
+.logo i{
+height: 350px;
+width: 350px;
+background: transparent;
+border: 4px solid #26214d;
+color: #b3b3b3;
+border-radius: 50%;
+display:inline-flex;
+align-items: center;
+justify-content: center;
+font-size: 60px;
+cursor: pointer;
+position: relative;
+top: 60px;
+left: -180px;
+}
+
+.container-text{
+    padding: 150px 0 0 130px;
+}
+
+.text h3{
+color: #fff;
+font-size: 50px;
+font-weight: 700;
+  font-style: normal;
+}
+
+.text h1{
+    font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-size: 50px;
+}
+
+.text span{
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 50px;
+}
+
+.text p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px
+}
+
+.redes-sociais a{
+color: #686666;
+padding: 10px;
+margin-top: 5px;
+font-size: 25px;
+}
+
+.redes-sociais i{
+    color: #fff;
+    padding-top: 5px;
+}
+
+.redes-sociais i:hover{
+    color: #26214d;
+    transition: 0.5s;
+}
+
+.text li{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+.text h4{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #fff;
+    position: relative;
+    top: 100px;
+}
+
+ul i{
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 5%;
+}
+
